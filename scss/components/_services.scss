@@ -1,0 +1,82 @@
+.services {
+    padding-top: 50px;
+    &__title {
+        margin-bottom: 14px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #000000;
+    }
+    &__text {
+        margin-bottom: 56px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+
+        color: #7C7C7C;
+    }
+
+}
+
+.accordion-item {
+    border-radius: 0 !important;
+    background: transparent !important;
+    border: none;
+    
+}
+
+.accordion-button {
+    background: transparent !important;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+
+    color: #10161D;
+    border: none !important;
+}
+
+.accordion-body {
+    border: none;
+}
+
+@media (min-width: $screen-table) {
+    .advantages {
+
+    }
+    
+}
+
+@media (min-width: $screen-desktop) {
+    .advantages {
+        padding-top: 126px;
+        &__title {
+            margin-bottom: 22px;
+            text-align: left;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 59px;
+            /* identical to box height */
+            
+            text-transform: uppercase;
+            
+            color: #1E1E1E;
+        }
+        &__text { 
+            margin-bottom: 76px ;  
+            max-width: 728px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 27px;
+
+            color: #7C7C7C;
+        }
+    }
+    
+}
+
