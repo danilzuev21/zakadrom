@@ -1,32 +1,73 @@
 .services {
     padding-top: 50px;
     &__title {
-        margin-bottom: 14px;
+        font-style: normal;
         font-weight: 700;
-        font-size: 24px;
-        line-height: 29px;
-        text-align: center;
+        font-size: 30px;
+        line-height: 35px;
         text-transform: uppercase;
-
-        color: #000000;
+        
+        color: #10161D;
     }
     &__text {
-        margin-bottom: 56px;
-        font-weight: 600;
+        font-weight: 300;
         font-size: 16px;
         line-height: 20px;
-        text-align: center;
+        
+        color: #10161D;
+    }
+    &__money {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        /* identical to box height */
 
-        color: #7C7C7C;
+
+        background: linear-gradient(180deg, #9A30D7 0%, #4D11A5 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+    &__order {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 121px;
+        height: 33px;
+
+        background: #4D11A5;
+        border-radius: 35px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+
+
+        color: #FFFFFF;
     }
 
 }
 
+.accordion {
+    --bs-accordion-active-color: var(#10161D) !important;
+}
+
 .accordion-item {
     border-radius: 0 !important;
-    background: transparent !important;
+    background: transparent !important; 
     border: none;
-    
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+        height: 1px;
+        background: linear-gradient(180deg, #9A30D7 0%, #4D11A5 100%);
+    }
 }
 
 .accordion-button {
@@ -38,11 +79,25 @@
 
     color: #10161D;
     border: none !important;
+    outline: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #10161D !important;
 }
 
 .accordion-body {
     border: none;
+    border-bottom: 1px solid #000;
 }
+
+.accordion-button:not(.collapsed) {
+    /* color: var(--bs-accordion-active-color); */
+    /* background-color: var(--bs-accordion-active-bg); */
+    box-shadow: none;
+}
+
+
 
 @media (min-width: $screen-table) {
     .advantages {

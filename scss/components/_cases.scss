@@ -1,0 +1,34 @@
+.cases {
+    &__title {
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 35px;
+        text-transform: uppercase;
+        
+        color: #10161D;
+    }
+    &__title-h3 {
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        text-transform: uppercase;
+        
+        color: #10161D;
+        span {
+            color: #9A30D7;
+        }
+    }
+
+}
+
+@media (min-width: $screen-table) {
+    
+}
+
+
+@media (min-width: $screen-desktop) {
+
+}
+

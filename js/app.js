@@ -15,32 +15,15 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    const swiper1 = new Swiper('.reviews__slider', {
+    const swiper1 = new Swiper('.cases__slider', {
         slidesPerView: 1,
         spaceBetween: 20,
-        breakpoints: {
-            // when window width is >= 320px
-            320: {
-                slidesPerView: 1,
-                spaceBetween: 20
-            },
-            // when window width is >= 480px
-            768: {
-                slidesPerView: 3,
-                spaceBetween: 30
-            },
-            // when window width is >= 640px
-            1240: {
-                slidesPerView: 4,
-                spaceBetween: 40
-            }
-        },
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
         },
     });
-    const swiper2 = new Swiper('.social__slider', {
+    const swiper2 = new Swiper('.reviews__slider', {
         slidesPerView: 1,
         spaceBetween: 20,
         breakpoints: {
@@ -71,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             // when window width is >= 480px
             768: {
-                slidesPerView: 2,
+                slidesPerView: 3,
                 spaceBetween: 30
             },
             1280: {
