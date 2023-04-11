@@ -1,0 +1,222 @@
+.bg-5D9BD4{
+    background-color: #5D9BD4;
+}
+.bg-E4548E{
+    background-color: #E4548E;
+}
+.bg-8AC8A2{
+    background-color: #8AC8A2;
+}
+.mt-81 {
+    margin-top: 81px;
+}
+.mb-57 {
+    margin-bottom: 57px;
+}
+.h-215 {
+    height: 215px;
+}
+
+.btn-white {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 273px;
+    height: 66px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
+}
+@media (min-width: $screen-desktop) {
+    .number-3 {
+        position: relative;
+        &::before {
+            content: "";
+
+            position: absolute;
+            top: 368px;
+            right: -411px;
+
+            display: block;
+            width: 361px;
+            height: 430px;
+            background-image: url("./images/number-3.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+
+        }
+    }
+}
+.card-animate {
+    -webkit-transition: all .4s;
+    transition: all .4s;
+}
+
+.card-animate:hover {
+    -webkit-transform: translateY(calc(-1.5rem / 5));
+    transform: translateY(calc(-1.5rem / 5));
+    -webkit-box-shadow: 0 5px 10px rgba(30,32,37,.12);
+    box-shadow: 0 5px 10px rgba(30,32,37,.12);
+}
+
+.btn-hover {
+    transition: all .4s;
+}
+.btn-hover:hover {
+    opacity: .7;
+}
+.z999 {
+    z-index: 999999999999999
+}
+
+.modal-fb {
+    background: #3C3C3C;
+    justify-content: center;
+    align-items: center;
+
+    select {
+        padding: 21px 14px;
+        margin-bottom: 20px;
+        background: #ACE063;
+        border-radius: 20px;
+    }
+
+    h3 {
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center;
+        text-transform: uppercase;
+        
+        color: #FFFFFF;
+        
+    }
+    input {
+        padding: 21px 14px;
+        margin-bottom: 20px;
+        background: #FFFFFF;
+        border-radius: 20px;
+    }
+    .btn-primary  {
+        height: 65px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(90deg, #69D4D5 0%, #ACE063 100%);
+        border-radius: 20px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        border: none;
+        /* identical to box height */
+
+
+        color: #3C3C3C;
+    }
+    .btn-light {
+        height: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        border: none;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height */
+
+        color: #FFFFFF;
+        border-radius: 20px;
+    }
+}
+
+.polytica {
+    padding-top: 100px;
+    h1 {
+       margin-bottom: 50px; 
+    }
+    h2 {
+        margin-bottom: 30px;
+    }
+}
+
+.my-w-1 {
+    
+}
+.my-w-25 {
+
+}
+
+.accordion-item  {
+    border-radius: 20px !important;
+}
+.accordion-button, .accordion-item  {
+    border-radius: 20px 20px  20px 20px !important;
+}
+
+.test {
+    display: flex;
+    flex-direction: column;
+}
+
+.mt-54 {
+    margin-top: 54px;
+}
+@media (min-width: $screen-desktop) {
+    .mt-75 {
+        margin-top: 75px;
+    }
+    .mt-36 {
+        margin-top: 36px;
+    }
+}
+
+.btn-up {
+    position: fixed;
+    background-color: #673ab7;
+    right: 20px;
+    bottom: 0px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 50px;
+  }
+
+  .btn-up::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E");
+  }
+
+  .btn-up_hide {
+    display: none;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .btn-up:hover {
+      background-color: #512da8;
+    }
+  }
+
+  .blog-serch {
+    width: 100%;
+    padding: 27px;
+    background: #FFFFFF;
+    border-radius: 20px;
+  }
+  .btn-up  {
+    z-index: 99999999999999999;
+  }

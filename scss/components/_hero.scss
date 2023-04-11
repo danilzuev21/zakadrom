@@ -1,0 +1,193 @@
+.hero {
+    padding-top: 100px;
+    padding-bottom: 61px;
+    background:url("./images/bg-hero.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__header-logo {
+        width: 110px;
+        height: 34px;
+    }
+    &__title {
+        margin-bottom: 9px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 35px;
+        text-align: center;
+        
+        /* title and button text */
+        text-align: center;
+        color: #FFFFFF;
+    }
+    &__text-1 {
+        margin-bottom: 9px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        /* identical to box height */
+        
+        text-align: center;
+        color: #9A30D7;
+    }
+    &__text-2 {
+        margin-bottom: 21px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        
+        color: #FFFFFF;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        max-width: 400px;
+        margin: 0 auto;
+        margin-bottom: 31px;
+        ul {
+            max-width: 190px;
+        }
+        li {
+            position: relative;
+            padding-left: 20px;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 7px;
+            /* identical to box height */
+
+
+            color: #FFFFFF;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 7px;
+                left: 7px;              
+
+                display: block;
+                width: 8px;
+                height: 8px;
+
+                background: #fff;
+                border-radius: 50%;
+            }
+        }
+    }
+    &__btn {
+        margin: 0 auto;
+        margin-bottom: 19px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 341px;
+        height: 52px;
+        background: #4D11A5;
+        border-radius: 35px;
+        border-radius: 20px;    
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height */
+
+        text-align: center;
+
+        color: #fff;
+    }
+    &__social {
+        text-align: center;
+        display: flex;
+        max-width: 100px;
+        margin: 0 auto;
+    }
+}
+
+// @media (min-width: $screen-table) {
+//     .hero {
+//         padding-top: 100px;
+//         padding-bottom: 61px;
+//         background:url("./images/bg-hero.png");
+//         background-size: cover;
+//         background-repeat: no-repeat;
+//     }
+// }
+
+
+@media (min-width: $screen-desktop) {
+    .hero {
+        position: relative;
+        padding-top: 100px;
+        padding-bottom: 61px;
+        background:url("./images/bg-hero.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        &__title {
+            margin-bottom: 28px;
+            font-weight: 700;
+            font-size: 52px;
+            line-height: 61px;      
+            
+            /* title and button text */
+            text-align: left;
+            color: #FFFFFE;
+        }
+        &__text-1 {
+            margin-bottom: 31px;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 28px;
+            text-align: left;
+            color: #9A30D7;
+        }
+        &__text-2 {
+            margin-bottom: 39px;
+            padding: 0;
+            font-weight: 300;
+            font-size: 28px;
+            line-height: 34px;
+            text-align: left;
+            color: #FFFFFF;
+        }
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            max-width: 677px;
+            margin: 0;
+            margin-bottom: 31px;
+            ul {
+                max-width: 300px;
+            }
+            li {
+                // max-width: 300px;
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 29px;
+                
+                color: #FFFFFF;
+    
+    
+                color: #FFFFFF;
+            }
+        }
+        &__btn {
+            margin: 0;
+
+            background: #4D11A5;
+            border-radius: 35px;
+            width: 531px;
+            height: 85px;
+            font-size: 22px;
+            line-height: 27px;
+        }
+        &__social {
+            position: absolute;
+            right: 0;
+            top: 100px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            max-width: 100px;
+            margin: 0 auto;
+        }
+    }
+}
+

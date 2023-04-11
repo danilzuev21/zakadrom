@@ -1,0 +1,141 @@
+.contact {
+  padding-top: 50px;
+  h2 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #000000;
+  }
+  &__list-1 {
+    li {
+      margin-bottom: 15px;
+      position: relative;
+      padding-left: 30px;
+        &::after {
+          content: "";
+
+          position: absolute;
+          top: 6px;
+          left: 6px;
+
+          display: block;
+          width: 18px;
+          height: 19px;
+
+          background-repeat: no-repeat;
+          background-size: contain;
+      }
+    }
+    li:nth-child(1) {
+      &::after {
+        background-image: url("./images/icon-phone.png");
+      }
+    }
+    li:nth-child(2) {
+      &::after {
+        background-image: url("./images/nav-icin.png");
+      }
+    }
+    li:nth-child(3) {
+      &::after {
+        background-image: url("./images/time.png");
+      }
+    }
+    a, span {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      /* identical to box height */
+
+
+      color: #000000;
+    }
+  }
+  &__list-2 {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__btn {
+    width: 343px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #000000;
+    background: linear-gradient(90deg, #69D4D5 0%, #ACE063 100%);
+    border-radius: 20px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $screen-table) {
+    
+}
+
+@media (min-width: $screen-desktop) {
+  .contact {
+    padding-top: 126px;
+    h2 {
+      text-align: left;
+      margin-bottom: 50px;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 59px;
+      /* identical to box height */
+
+      text-transform: uppercase;
+
+      color: #000000;
+    }
+    &__list-1 {
+      li {
+        margin-bottom: 15px;
+        position: relative;
+        padding-left: 30px;
+          &::after {
+            content: "";
+  
+            position: absolute;
+            top: 0px;
+            left: 0px;
+
+            width: 24px;
+            height: 30px;
+          }
+        }
+      a, span {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        /* identical to box height */
+  
+  
+        color: #000000;
+      }
+    }
+    &__list-2 {
+      margin-bottom: 30px;
+      justify-content: flex-start;
+      li {
+        margin-right: 20px;
+      }
+    }
+    &__btn {
+      margin: 0;
+    }
+  }
+}

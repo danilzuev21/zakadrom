@@ -1,0 +1,35 @@
+.info {
+    &__title {
+
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 33px;
+        text-transform: uppercase;
+        color: #000;
+        span {
+            color: #9A30D7;
+        };
+    };
+    &__item-1 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+
+        background: linear-gradient(180deg, #9A30D7 0%, #4D11A5 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent
+    }
+    &__item-2 {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28px;
+
+        color: #10161D;
+    }
+
+};
+
+
+

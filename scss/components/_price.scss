@@ -1,0 +1,112 @@
+.price {
+    h2 {
+        // margin-bottom: 20px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        text-transform: uppercase;
+
+        color: #1E1E1E;
+    } 
+    &__accordion-dest {
+        display: none;
+    }
+   &__elem1 {
+    max-width: 140px;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 28px;
+
+    color: #FDFDFD;
+   }
+   &__elem2 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    
+    color: #FFFFFF;
+   }
+   .accordion-item {
+   
+    p { 
+        margin-bottom: 34px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+
+        color: #000000;
+    }    
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 273px;
+        height: 66px;
+        margin: 0 auto;
+        background: #FFFFFF;
+        border-radius: 20px;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 27px;
+        /* identical to box height */
+
+
+        color: #000000;
+    }
+    .accordion-collapse {
+        padding-top: 34px;
+        padding-bottom: 41px;
+    }
+}
+}
+
+@media (min-width: $screen-table) {
+    
+}
+
+
+@media (min-width: $screen-desktop) {
+    .price {
+        padding-top: 126px;
+        &__accordion-dest {
+            display: flex;
+        }
+        h2 {
+            margin-bottom: 50px;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 59px;
+            /* identical to box height */
+            
+            text-transform: uppercase;
+            
+            color: #000000;
+        }
+        &__card {
+            // min-height: 691px;
+            padding-bottom: 50px;
+            border-radius: 20px;
+            overflow: hidden;
+            &-img {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                height: 173px;
+                background-color: #fff;
+            }
+        }
+    }
+    .accordion {
+        display: none;
+    }
+}
+
+.accordion-button:not(.collapsed) {
+    color: #000000;
+    background-color: #fff;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}

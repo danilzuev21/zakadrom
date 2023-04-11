@@ -1,0 +1,86 @@
+.teachers {
+  padding-top: 50px;
+  &__title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #000000;
+  }
+  &__card {
+    max-width: 630px;
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 20px;
+    img {
+        min-width: 122px;
+    }
+    h3 {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+        
+        text-transform: uppercase;
+        
+        color: #000000;
+    }
+    p {
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 10px;
+
+        color: #7C7C7C;
+    }
+  }
+}
+
+@media (min-width: $screen-table) {
+    
+}
+
+
+@media (min-width: $screen-desktop) {
+    .teachers {
+        padding-top: 126px;
+        &__title {
+            margin-bottom: 50px;
+            text-align: left;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 59px;
+            /* identical to box height */
+            
+            text-transform: uppercase;
+            
+            color: #000000;
+        }
+        &__card {
+
+          img {
+            min-width: 259px;
+          }
+          h3 {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 27px;
+            /* identical to box height */
+
+            text-transform: uppercase;
+
+            color: #000000;
+          }
+          p {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            
+            color: #7C7C7C;
+          }
+        }
+      }
+}
+
