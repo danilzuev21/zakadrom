@@ -1,84 +1,42 @@
 .contact {
   padding-top: 50px;
-  h2 {
+  &__title {
     margin-bottom: 20px;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    text-align: center;
+    font-size: 30px;
+    line-height: 35px;
     text-transform: uppercase;
-
-    color: #000000;
+    
+    color: #10161D;
   }
   &__list-1 {
-    li {
-      margin-bottom: 15px;
-      position: relative;
-      padding-left: 30px;
-        &::after {
-          content: "";
-
-          position: absolute;
-          top: 6px;
-          left: 6px;
-
-          display: block;
-          width: 18px;
-          height: 19px;
-
-          background-repeat: no-repeat;
-          background-size: contain;
+      margin-bottom: 16px;
+      li:nth-child(1) {
+        margin-bottom: 7px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        /* identical to box height */
+        
+        
+        color: #9A30D7;
       }
-    }
-    li:nth-child(1) {
-      &::after {
-        background-image: url("./images/icon-phone.png");
-      }
-    }
-    li:nth-child(2) {
-      &::after {
-        background-image: url("./images/nav-icin.png");
-      }
-    }
-    li:nth-child(3) {
-      &::after {
-        background-image: url("./images/time.png");
-      }
-    }
-    a, span {
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 20px;
-      /* identical to box height */
 
+      li:nth-child(2) {
+        a {
 
-      color: #000000;
-    }
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 22px;
+          /* identical to box height */
+        
+          color: #10161D;
+        } 
+      }
   }
   &__list-2 {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  &__btn {
-    width: 343px;
-    height: 56px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 27px;
-    /* identical to box height */
-
-
-    color: #000000;
-    background: linear-gradient(90deg, #69D4D5 0%, #ACE063 100%);
-    border-radius: 20px;
-    margin: 0 auto;
   }
 }
 
@@ -87,55 +45,5 @@
 }
 
 @media (min-width: $screen-desktop) {
-  .contact {
-    padding-top: 126px;
-    h2 {
-      text-align: left;
-      margin-bottom: 50px;
-      font-weight: 700;
-      font-size: 48px;
-      line-height: 59px;
-      /* identical to box height */
-
-      text-transform: uppercase;
-
-      color: #000000;
-    }
-    &__list-1 {
-      li {
-        margin-bottom: 15px;
-        position: relative;
-        padding-left: 30px;
-          &::after {
-            content: "";
-  
-            position: absolute;
-            top: 0px;
-            left: 0px;
-
-            width: 24px;
-            height: 30px;
-          }
-        }
-      a, span {
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 29px;
-        /* identical to box height */
-  
-  
-        color: #000000;
-      }
-    }
-    &__list-2 {
-      margin-bottom: 30px;
-      justify-content: flex-start;
-      li {
-        margin-right: 20px;
-      }
-    }
-    &__btn {
-      margin: 0;
-    }
-  }
+ 
 }

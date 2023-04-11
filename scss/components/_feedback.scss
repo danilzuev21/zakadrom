@@ -1,5 +1,7 @@
 .feedback {
     background-image: url('/images/bg-form.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 32px;
     padding-bottom: 56px;
    &__text {

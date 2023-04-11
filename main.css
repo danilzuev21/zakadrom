@@ -1033,6 +1033,8 @@ input[type=radio].visually-hidden {
 
 .feedback {
   background-image: url("/images/bg-form.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 32px;
   padding-bottom: 56px;
 }
@@ -1070,4 +1072,51 @@ input[type=radio].visually-hidden {
   color: #FFFFFF;
   margin: 0 auto;
   margin-top: 30px;
+}
+
+.contact {
+  padding-top: 50px;
+}
+.contact__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  text-transform: uppercase;
+  color: #10161D;
+}
+.contact__list-1 {
+  margin-bottom: 16px;
+}
+.contact__list-1 li:nth-child(1) {
+  margin-bottom: 7px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  color: #9A30D7;
+}
+.contact__list-1 li:nth-child(2) a {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  color: #10161D;
+}
+.contact__list-2 {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.footer {
+  padding-top: 34px;
+}
+.footer li, .footer a {
+  text-align: center;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  color: #10161D;
+  margin-bottom: 13px;
 }/*# sourceMappingURL=main.css.map */
