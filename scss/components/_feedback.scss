@@ -1,5 +1,5 @@
 .feedback {
-    background-image: url('/images/bg-form.png');
+    background-image: url('/images/bg-form-mob.png');
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 32px;
@@ -27,6 +27,7 @@
         padding: 9px 0;
         background: transparent;
         border-bottom: 1px solid #FFFFFF;
+        color: #fff;
     }
 
     &__btn {
@@ -54,6 +55,48 @@
 
 
 @media (min-width: $screen-desktop) {
-  
+    .feedback {
+        background-image: url('/images/bg-form.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 32px;
+        padding-bottom: 56px;
+       &__text {
+            margin-bottom: 42px;
+            font-weight: 700;
+            font-size: 34px;
+            line-height: 40px;
+            text-transform: uppercase;
+
+            /* title and button text */
+
+            color: #FFFFFE;
+        }
+        &__form {
+            
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: space-between;
+            // align-items: center;
+            
+        }
+        &__input {
+            width: 311px;
+            margin-bottom:0;
+            padding: 9px 0;
+            background: transparent;
+            border-bottom: 1px solid #FFFFFF;
+            color: #fff;
+            &:nth-child(2) {
+                width: 495px;
+            }
+        }
+    
+        &__btn {
+          
+            margin: 0;
+        }
+    }
 }
 

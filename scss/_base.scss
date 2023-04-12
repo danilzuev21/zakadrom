@@ -10,7 +10,7 @@
 body {
   font-family:$font-family--Montserrat;
   margin: 0 auto;
-  background-color:#F0F0F0;
+  background-color:#EBEBEB;
 }
   
 h1,h2,h3,h4,h5 {
@@ -97,6 +97,14 @@ input[type="radio"].visually-hidden {
 
   
 @media (min-width: $screen-desktop) {
-
+  .container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 16px 80px;
+  }
 }
   
+.h-200 {
+  height: 400px;
+}

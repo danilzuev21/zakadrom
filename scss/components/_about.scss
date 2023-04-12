@@ -1,8 +1,9 @@
 .about {
-    background-color: hsl(0, 0%, 100%);
-    padding-top: 44px;
+    // background-color: hsl(0, 0%, 100%);  
+    // padding-top: 44px;
     padding-bottom: 39px;   
     &__title {
+        padding-top: 40px;
         margin-bottom: 13px;
         font-weight: 700;
         font-size: 30px;
@@ -20,9 +21,11 @@
         color: #10161D;
     }
     &__img {
+        position: relative;
         text-align: center;
     }
     &__list {
+        padding-bottom: 40px;
         font-weight: 300;
         font-size: 16px;
         line-height: 20px;
@@ -47,17 +50,81 @@
         } 
 
     }
+    &__list-2 {
+        position: absolute;
+        top: 45px;
+        left: 33px;
+
+        li {
+            padding-left: 20px;
+            text-align: left;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+
+            color: #FFFFFF;
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 7px;
+                left: 7px;              
+
+                display: block;
+                width: 4px;
+                height: 4px;
+
+                background: #fff;
+                border-radius: 50%;
+            }
+        }
+    }
 
 }
 
 @media (min-width: $screen-table) {
+    .about {
+        &__list-2 {
+            top: 69px;
+            left: 33px;
+            li {
 
+                font-weight: 400;
+                font-size: 28px;
+                line-height: 34px;
+                
+                color: #FFFFFF;
+                &::before {
+                    top: 18px;
+                    left: 0px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .about {
+        &__list-2 {
+            top: 10px;
+        }
+    }
 }
 
 @media (min-width: $screen-desktop) {
     .about {
+        padding-top: 150px;
+        &__card:first-child {
+            margin-bottom: 124px;
+        }
+        &__card:last-child {
+            .about__title {
+                padding-top: 18px;
+            }
+        }
         &__title {
-            margin-bottom: 9px;
+            padding-top: 0px;
+            margin-bottom: 45px;
             font-weight: 700;
             font-weight: 700;
             font-size: 64px;
@@ -99,6 +166,9 @@
                     border-radius: 50%;
                 }
             }
+        }
+        &__list-2 {
+            top: 124px;
         }
     }   
 }

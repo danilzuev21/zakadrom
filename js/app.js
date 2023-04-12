@@ -18,14 +18,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const swiper1 = new Swiper('.cases__slider', {
         slidesPerView: 1,
         spaceBetween: 20,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
+        // pagination: {
+        //     el: ".swiper-pagination",
+        //     clickable: true,
+        // },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
     });
     const swiper2 = new Swiper('.reviews__slider', {
         slidesPerView: 1,
         spaceBetween: 20,
+        navigation: {
+            nextEl: '.swiper-button-reviews-next',
+            prevEl: '.swiper-button-reviews-prev',
+        },
         breakpoints: {
             // when window width is >= 320px
             320: {
@@ -37,36 +45,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 slidesPerView: 2,
                 spaceBetween: 30
             },
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
-    const swiper3 = new Swiper('.buy__slider', {
-        slidesPerView: 1,
-        spaceBetween: 20,
-        breakpoints: {
-            // when window width is >= 320px
-            320: {
-                slidesPerView: 1,
-                spaceBetween: 20
-            },
-            // when window width is >= 480px
-            768: {
+            992: {
                 slidesPerView: 3,
-                spaceBetween: 30
-            },
-            1280: {
-                slidesPerView: 3,
-                spaceBetween: 30
+                spaceBetween: 40
             },
         },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
+
+        // pagination: {
+        //     el: ".swiper-pagination",
+        //     clickable: true,
+        // },
     });
+
 });
 
 

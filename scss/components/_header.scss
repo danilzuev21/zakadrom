@@ -1,4 +1,5 @@
 .header {
+    padding: 10px 0;
     position: fixed;
     top: 0;
     left: 0;
@@ -59,7 +60,7 @@
 
     width: 100vw;
     height: 100vh;
-    background:#F0F0F0;
+    background:#27113B;
     background-size: 100%;
     background-repeat: no-repeat;
 
@@ -143,9 +144,9 @@
     height: 40px;
     border-radius: 50%;
     transition-duration: .5s;
-    border: 2px solid #FFf;
+    // border: 2px solid #FFf;
     z-index: 999;
-    background: linear-gradient(90deg, #6DD5D0 0%, #A5DF70 100%) !important;   
+    background: #9A30D7 !important;   
     span {
         display: block;
         width: 16px;
@@ -177,6 +178,7 @@
 
 @media (min-width: $screen-desktop) {
     .header {
+        padding: 18px 0;
         &__adrees {
             display: flex;
         }
@@ -203,6 +205,9 @@
             flex-direction: row;
             align-items: flex-start;
             justify-content: space-between;
+            
+    margin-top: 10px;
+
 
         }
         &__link {

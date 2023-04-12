@@ -1,5 +1,5 @@
 .services {
-    padding-top: 50px;
+    // padding-top: 50px;
     &__title {
         font-style: normal;
         font-weight: 700;
@@ -8,6 +8,7 @@
         text-transform: uppercase;
         
         color: #10161D;
+        margin-bottom: 20px;
     }
     &__text {
         font-weight: 300;
@@ -46,6 +47,10 @@
 
         color: #FFFFFF;
     }
+    &__badge {
+        width: 189px;
+        height: 23px;
+    }
 
 }
 
@@ -80,6 +85,7 @@
     color: #10161D;
     border: none !important;
     outline: none;
+
 }
 
 .accordion-button:not(.collapsed) {
@@ -99,37 +105,75 @@
 
 
 
-@media (min-width: $screen-table) {
-    .advantages {
 
-    }
+@media (min-width: $screen-table) {
+
     
 }
 
 @media (min-width: $screen-desktop) {
-    .advantages {
-        padding-top: 126px;
+    .services {
+        margin-bottom: 150px;
         &__title {
-            margin-bottom: 22px;
-            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 45px;
             font-weight: 700;
-            font-size: 48px;
-            line-height: 59px;
-            /* identical to box height */
-            
+            font-size: 64px;
+            line-height: 75px;
             text-transform: uppercase;
-            
-            color: #1E1E1E;
+
+            color: #10161D;
         }
-        &__text { 
-            margin-bottom: 76px ;  
-            max-width: 728px;
-            text-align: left;
-            font-weight: 600;
+        &__text {
+            margin-bottom: 45px;
+            font-weight: 300;
+            font-size: 26px;
+            line-height: 32px;
+            
+            color: #10161D;
+        }
+        &__money {
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 57px;
+        }
+        &__order {
+            width: 246px;
+            height: 64px;
+            
+            background: #4D11A5;
+            border-radius: 35px;
+
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+
+            color: #FFFFFF;
+        }
+        &__badge {
+            width: 290px;
+            height: 43px;
+        }
+        .accordion-button {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 38px;
+            /* identical to box height */
+
+            text-transform: uppercase;
+
+            color: #10161D;
+        }
+        .accordion-body {
+            font-weight: 300;
             font-size: 22px;
             line-height: 27px;
 
-            color: #7C7C7C;
+            color: #10161D;
+        }
+        .accordion-mw{
+            max-width: 950px;
         }
     }
     

@@ -1,7 +1,7 @@
 .hero {
     padding-top: 100px;
     padding-bottom: 61px;
-    background:url("./images/bg-hero.png");
+    background:url("./images/bg-hero-mob.png");
     background-size: cover;
     background-repeat: no-repeat;
     &__header-logo {
@@ -98,25 +98,31 @@
         display: flex;
         max-width: 100px;
         margin: 0 auto;
+        li:first-child {
+            margin-right: 10px;
+        }
+    }
+    &__arrow {
+        display: none;
     }
 }
 
-// @media (min-width: $screen-table) {
-//     .hero {
-//         padding-top: 100px;
-//         padding-bottom: 61px;
-//         background:url("./images/bg-hero.png");
-//         background-size: cover;
-//         background-repeat: no-repeat;
-//     }
-// }
+@media (min-width: $screen-table) {
+    .hero {
+        padding-top: 100px;
+        padding-bottom: 61px;
+        background:url("./images/bg-hero.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
 
 
 @media (min-width: $screen-desktop) {
     .hero {
         position: relative;
-        padding-top: 100px;
-        padding-bottom: 61px;
+        padding-top: 258px;
+        padding-bottom: 124px;
         background:url("./images/bg-hero.png");
         background-size: cover;
         background-repeat: no-repeat;
@@ -150,11 +156,11 @@
         &__list {
             display: flex;
             justify-content: space-between;
-            max-width: 677px;
+            max-width: 776px;
             margin: 0;
             margin-bottom: 31px;
             ul {
-                max-width: 300px;
+                max-width: 447px;
             }
             li {
                 // max-width: 300px;
@@ -166,6 +172,18 @@
     
     
                 color: #FFFFFF;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 12px;
+                    left: -1px;
+                    display: block;
+                    width: 10px;
+                    height: 10px;
+                    background: #fff;
+                    border-radius: 50%;
+                
+                }
             }
         }
         &__btn {
@@ -180,13 +198,49 @@
         }
         &__social {
             position: absolute;
-            right: 0;
-            top: 100px;
+            right: 80px;
+            top: 350px;
             text-align: center;
             display: flex;
             flex-direction: column;
             max-width: 100px;
             margin: 0 auto;
+            li:first-child {
+                margin-left: 5px;
+                margin-bottom: 32px;
+            }
+            &::after {
+                content: "";
+
+                position: absolute;
+                top: 130px;
+                left: 24px;
+
+                display: block;
+                width: 2px;
+                height: 88px;
+
+                background-color: #fff;
+            } 
+            &::before {
+                content: "";
+
+                position: absolute;
+                bottom: 130px;
+                left: 24px;
+
+                display: block;
+                width: 2px;
+                height: 88px;
+
+                background-color: #fff;
+            } 
+        }
+        &__arrow {
+            display: block;
+            position: absolute;
+            right: 80px;
+            bottom: 80px
         }
     }
 }
