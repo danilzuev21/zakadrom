@@ -871,7 +871,7 @@ input[type=radio].visually-hidden {
 }
 .about__list-2 {
   position: absolute;
-  top: 45px;
+  top: 15px;
   left: 33px;
 }
 .about__list-2 li {
@@ -895,6 +895,13 @@ input[type=radio].visually-hidden {
   border-radius: 50%;
 }
 
+@media (min-width: 400px) {
+  .about__list-2 {
+    position: absolute;
+    top: 41px;
+    left: 33px;
+  }
+}
 @media (min-width: 768px) {
   .about__list-2 {
     top: 69px;
