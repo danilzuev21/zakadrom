@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelector('.menu-burger').addEventListener('click', ()=> {
-        document.querySelector('.menu').classList.add('menu--active');
+        document.querySelector('.menu').classList.toggle('menu--active');
+        document.querySelector('.open').classList.toggle('d-none');
+        document.querySelector('.icon-close').classList.toggle('d-none');
+        
     });
 
-    document.querySelector('.menu__btn-close').addEventListener('click', ()=> {
-        document.querySelector('.menu').classList.remove('menu--active');
-    });
 
     document.addEventListener('click', (event) => {
         if(event.target.matches('.btn-js')) {
