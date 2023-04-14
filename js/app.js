@@ -3,8 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.menu-burger').addEventListener('click', ()=> {
         document.querySelector('.menu').classList.toggle('menu--active');
         document.querySelector('.open').classList.toggle('d-none');
-        document.querySelector('.icon-close').classList.toggle('d-none');
-        
+        document.querySelector('.icon-close').classList.toggle('d-none'); 
     });
 
 

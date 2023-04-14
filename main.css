@@ -408,6 +408,10 @@ input[type=radio].visually-hidden {
   color: #fff;
 }
 
+.myModal-2 {
+  background: #4D11A5;
+}
+
 .header {
   padding: 10px 0;
   position: fixed;
@@ -1509,7 +1513,7 @@ input[type=radio].visually-hidden {
   }
 }
 .feedback {
-  background-image: url("/images/bg-form-mob.png");
+  background-image: url("./images/bg-form-mob.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 80px;
@@ -1554,7 +1558,7 @@ input[type=radio].visually-hidden {
 
 @media (min-width: 1280px) {
   .feedback {
-    background-image: url("/images/bg-form.png");
+    background-image: url("./images/bg-form.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 80px;

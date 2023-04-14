@@ -1,5 +1,5 @@
 .feedback {
-    background-image: url('/images/bg-form-mob.png');
+    background-image: url('./images/bg-form-mob.png');
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 80px;
@@ -56,7 +56,7 @@
 
 @media (min-width: $screen-desktop) {
     .feedback {
-        background-image: url('/images/bg-form.png');
+        background-image: url('./images/bg-form.png');
         background-repeat: no-repeat;
         background-size: cover;
         padding-top:  80px;
