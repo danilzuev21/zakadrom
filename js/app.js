@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
         //     clickable: true,
         // },
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-case-next',
+            prevEl: '.swiper-button-case-prev',
         },
     });
     const swiper2 = new Swiper('.reviews__slider', {

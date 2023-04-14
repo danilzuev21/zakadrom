@@ -42,30 +42,30 @@
 
   }
   &__wrapper-btn {
-      display: flex;
-      justify-content: space-between; 
-      width: 89px;
-      position: absolute;
-      bottom: 14px;
-      right: 0;
+    width: 89px;
+    position: absolute;
+    bottom: 14px;
+    right: 0;
   }
 
 }
 
-.swiper-button-reviews-next:after, .swiper-button-reviews-prev:after {
+.swiper-button-next, 
+.swiper-button-prev {
+    width: 28.69px;
+    height: 28.69px;
+    
+    background: #4D11A5;
+    border-radius: 50%;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
     font-size: 12px;
     text-transform: none!important;
     letter-spacing: 0;
     font-variant: initial;
     line-height: 1;
     color: #fff;
-}
-
-.swiper-button-reviews-next, .swiper-button-reviews-prev {
-  width: 28.69px;
-  height: 28.69px;
-  background: #4D11A5;
-  border-radius: 50%;
 }
 
 @media (min-width: $screen-table) {
@@ -75,7 +75,7 @@
 
 @media (min-width: $screen-desktop) {
   .reviews {
-    padding-top: 150px;
+    // padding-top: 150px;
     padding-bottom: 150px;
     &__title {
       margin-bottom: 45px;
@@ -119,14 +119,29 @@
   
     }
     &__wrapper-btn {
-        display: flex;
-        justify-content: space-between; 
-        width: 89px;
-        position: absolute;
-        bottom: 14px;
-        right: 0;
+      width: 143px;
+      position: absolute;
+      bottom: 37px;
+      right: 0;
     }
   
+  }
+  .swiper-button-next, 
+  .swiper-button-prev {
+      width: 52px;
+      height: 52px;
+      
+      background: #4D11A5;
+      border-radius: 50%;
+  }
+
+  .swiper-button-next:after, .swiper-button-prev:after {
+      font-size: 22px;
+      text-transform: none!important;
+      letter-spacing: 0;
+      font-variant: initial;
+      line-height: 1;
+      color: #fff;
   }
 }
 
