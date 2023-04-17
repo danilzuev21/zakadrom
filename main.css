@@ -654,6 +654,7 @@ input[type=radio].visually-hidden {
   font-size: 16px;
   line-height: 19px;
   /* identical to box height */
+  text-transform: uppercase;
   text-align: center;
   color: #9A30D7;
 }
@@ -663,6 +664,7 @@ input[type=radio].visually-hidden {
   font-size: 18px;
   line-height: 22px;
   text-align: center;
+  text-transform: uppercase;
   color: #FFFFFF;
 }
 .hero__list {
