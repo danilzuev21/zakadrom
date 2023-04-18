@@ -56,6 +56,19 @@ document.addEventListener('DOMContentLoaded', () => {
         // },
     });
 
+    $("form").submit(function(e) {
+        e.preventDefault();
+        let th = $(this);
+        $.ajax({
+            type: "POST",
+            url: "mail.php",
+            data: th.serialize(),
+            success: function(data) {
+                th.trigger("reset");
+            }
+        });
+        return false;
+    });
 });
 
 
