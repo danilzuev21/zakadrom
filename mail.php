@@ -5,12 +5,11 @@ $method = $_SERVER['REQUEST_METHOD'];
 //Script Foreach
 $c = true;
 
-$project_name = 'baltica-kids.ru';
-//TODO: Узнать почту для рассылки
+$project_name = 'zakadrom4k.ru';
 $admin_emails  = [
     'firstrinat@gmail.com',
     ];
-$form_subject = 'Сообщение с сайта zakadrom.ru';
+$form_subject = 'Сообщение с сайта zakadrom4k.ru';
 $message = '';
 
 $params = $method === 'POST' ? $_POST : ($method ===  'GET' ? $_GET : []);
