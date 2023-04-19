@@ -8,7 +8,7 @@ $c = true;
 $project_name = 'baltica-kids.ru';
 //TODO: Узнать почту для рассылки
 $admin_emails  = [
-    '',
+    'firstrinat@gmail.com',
     ];
 $form_subject = 'Сообщение с сайта zakadrom.ru';
 $message = '';
